@@ -4,8 +4,7 @@ addPage(
   new AutoloadPage("themed-icon", () => {
     $("img.nav__logo").attr(
       "src",
-      UiContext.cdn_prefix +
-        (getTheme() === "dark" ? "nav_logo_dark.svg" : "nav_logo_light.svg"),
+      `${UiContext.cdn_prefix}nav_logo_v2_${getTheme()}.svg`,
     );
   }),
 );
